@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseReg — Kurslarga yozilish platformasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CourseReg Platformasi</h1>
+        <p>O'zingizga mos kursni tanlang va onlayn ro'yxatdan o'ting</p>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Mavjud kurslar</h2>
+            <div class="course-list">
+                <div class="course-card">
+                    <h3>Frontend Dasturlash</h3>
+                    <p>HTML, CSS, JavaScript va React asoslari.</p>
+                    <button onclick="selectCourse('Frontend Dasturlash')">Yozilish</button>
+                </div>
+                <div class="course-card">
+                    <h3>Backend Dasturlash</h3>
+                    <p>Python, Django va ma'lumotlar bazasi.</p>
+                    <button onclick="selectCourse('Backend Dasturlash')">Yozilish</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="register-form">
+            <h2>Kursga ro'yxatdan o'tish</h2>
+            <form id="courseForm">
+                <input type="text" id="studentName" placeholder="Ism-familiyangiz" required>
+                <input type="tel" id="studentPhone" placeholder="Telefon raqamingiz (+998...)" required>
+                <input type="text" id="selectedCourse" placeholder="Tanlangan kurs" readonly required>
+                <button type="submit">Ariza yuborish</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="add.js"></script>
+</body>
+</html>
